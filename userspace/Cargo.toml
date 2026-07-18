@@ -1,0 +1,108 @@
+[package]
+name = "elitra-utils"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+panic = "abort"
+opt-level = "z"
+lto = true
+codegen-units = 1
+debug = false
+strip = "symbols"
+
+[[bin]]
+name = "hello"
+path = "src/main.rs"
+
+[[bin]]
+name = "cat"
+path = "apps/cat.rs"
+
+[[bin]]
+name = "ls"
+path = "apps/ls.rs"
+
+[[bin]]
+name = "touch"
+path = "apps/touch.rs"
+
+[[bin]]
+name = "mkdir"
+path = "apps/mkdir.rs"
+
+[[bin]]
+name = "rm"
+path = "apps/rm.rs"
+
+[[bin]]
+name = "rmdir"
+path = "apps/rmdir.rs"
+
+[[bin]]
+name = "mv"
+path = "apps/mv.rs"
+
+[[bin]]
+name = "cp"
+path = "apps/cp.rs"
+
+[[bin]]
+name = "true"
+path = "apps/true.rs"
+
+[[bin]]
+name = "false"
+path = "apps/false.rs"
+
+[[bin]]
+name = "echo"
+path = "apps/echo.rs"
+
+[[bin]]
+name = "yes"
+path = "apps/yes.rs"
+
+[[bin]]
+name = "seq"
+path = "apps/seq.rs"
+
+[[bin]]
+name = "sleep"
+path = "apps/sleep.rs"
+
+[[bin]]
+name = "clear"
+path = "apps/clear.rs"
+
+[[bin]]
+name = "uname"
+path = "apps/uname.rs"
+
+[[bin]]
+name = "basename"
+path = "apps/basename.rs"
+
+[[bin]]
+name = "dirname"
+path = "apps/dirname.rs"
+
+[[bin]]
+name = "pwd"
+path = "apps/pwd.rs"
+
+[[bin]]
+name = "which"
+path = "apps/which.rs"
+
+[[bin]]
+name = "tee"
+path = "apps/tee.rs"
+
+[[bin]]
+name = "env"
+path = "apps/env.rs"
+
+[[bin]]
+name = "init"
+path = "apps/init.rs"
